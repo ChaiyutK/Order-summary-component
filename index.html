@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    body{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: hsl(225, 100%, 94%);
+      background-image: url("images/pattern-background-desktop.svg");
+    }
+    .mainbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+    .mainitem{
+      width: 300px;
+      border-radius: 15px;
+      background-color: white;
+      
+    }
+    .ordersummarybox{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 15px;
+    }
+    .ordersummaryitem{
+      width: 100%;
+    }
+    .ordersummaryitem p{
+      font-weight: 900;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 0;
+      color: hsl(223, 47%, 23%);
+    }
+    .ordersummaryitem p:last-child{
+      font-weight: 500;
+      font-size: 0.8rem;
+      width: 80%;
+      margin-bottom: 20px;
+      color: hsl(224, 23%, 55%);
+    }
+    .imagesum{
+      background:url("images/illustration-hero.svg");
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .planbox{
+      display: flex;
+    } 
+    .planitem{
+      display: flex;
+      width: 33%;
+    }
+    .planitem p:first-child{
+      font-size: 0.8rem;
+      color: hsl(223, 47%, 23%);
+    }
+    .planitem p:last-child{
+      margin-bottom: 0;
+      font-size: 0.8rem;
+    }
+    .detail{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a{
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: hsl(245, 75%, 52%);
+      
+    }
+    a:hover{
+      text-decoration: none;
+      opacity: 0.6;
+    }
+    .logo{
+      justify-content: right;
+    }
+    .logo img{
+      margin-right: 10px;
+    }
+    .planitem p{
+      text-align: left;
+      margin: 0;
+    }
+    .annplan{
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .change{
+      align-items: center;
+      justify-content: center;
+    }
+    .button{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .button button{
+      width: 80%;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      background-color: hsl(245, 75%, 52%);
+      border: 0;
+      font-weight: 700;
+    }
+    button:first-child:hover{
+      opacity: 0.6;
+    }
+    button:last-child{
+      background-color: white;
+      border: 0px;
+      color: hsl(224, 23%, 55%);
+      margin-bottom: 25px;
+    }
+    button:last-child:hover{
+      color: hsl(223, 47%, 23%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="mainbox">
+    <div class="mainitem">
+      <div class="ordersummarybox">
+        <div class="ordersummaryitem imagesum">
+          
+        </div>
+        <div class="ordersummaryitem detail">
+          <p>Order Summary</p>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </div>
+        <div class="ordersummaryitem">
+          <div class="planbox">
+            <div class="planitem logo">
+              <img src="images/icon-music.svg" alt="iconmusic">
+            </div>
+            <div class="planitem annplan">
+              <p>Annual Plan</p>
+              <p>$59.99/year</p>
+            </div>
+            <div class="planitem change">
+              <a href="#">Change</a>              
+            </div>
+        </div>
+        </div>
+        <div class="ordersummaryitem button">
+          <button>Proceed to Payment</button>
+          <button>Cancel Order</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
